@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class LoginEfetuado {
-    JFrame frame = new JFrame();;
+    JFrame frame = new JFrame();
     JLabel sucesso = new JLabel("Bem-Vindo!");
     public LoginEfetuado(String usuario){
         sucesso.setText("Olá "+ usuario);
