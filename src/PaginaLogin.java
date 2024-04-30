@@ -13,26 +13,16 @@ import javax.swing.JTextField;
 
 public class PaginaLogin implements ActionListener{
     private Dados dadosLogin;
-    JFrame frame;
-    JButton botaoLogin;
-    JButton registrar;
-    JTextField campoUsuario;
-    JPasswordField campoSenha;
-    JLabel usuarioLabel;
-    JLabel senhaLabel;
-    JLabel mensagem;
+    JFrame frame = new JFrame();
+    JButton botaoLogin = new JButton("Login");
+    JButton registrar = new JButton("Registrar");
+    JTextField campoUsuario = new JTextField();
+    JPasswordField campoSenha = new JPasswordField();
+    JLabel usuarioLabel = new JLabel("Usuário:");
+    JLabel senhaLabel = new JLabel("Senha:");
+    JLabel mensagem = new JLabel("");
     public PaginaLogin() {
         dadosLogin = new Dados();
-
-
-        frame = new JFrame();
-        botaoLogin = new JButton("Login");
-        registrar = new JButton("Registrar");
-        campoUsuario = new JTextField();
-        campoSenha = new JPasswordField();
-        usuarioLabel = new JLabel("Usuário:");
-        senhaLabel = new JLabel("Senha:");
-        mensagem = new JLabel("");
 
         mensagem.setBounds(125,250,250,35);
         mensagem.setFont(new Font(null,Font.ITALIC,25));

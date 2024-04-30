@@ -5,11 +5,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class LoginEfetuado {
-    JFrame frame;
-    JLabel sucesso;
+    JFrame frame = new JFrame();;
+    JLabel sucesso = new JLabel("Bem-Vindo!");
     public LoginEfetuado(String usuario){
-        frame = new JFrame();
-        sucesso = new JLabel("Bem-Vindo!");
         sucesso.setText("Olá "+ usuario);
 
         sucesso.setBounds(0,0,200,35);
